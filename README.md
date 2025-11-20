@@ -2,4 +2,4 @@
 ## sm
 ## tpsit
 ## a.s 2025/2026
-<a href = https://github.com/SimoneMarcomigni>
+<a href = "https://github.com/SimoneMarcomigni"> https://github.com/SimoneMarcomigni<a>
