@@ -14,8 +14,9 @@ let numero = document.getElementById("inNumber").value;
         document.getElementById("out").innerHTML += "<br> I colori inseriti sono: " + colori;
         console.log(colori);
         document.getElementById("error").innerHTML = "errori";
-        if(colori.length() == 3){
+        if(colori.length == 3){
             newColor = `rgb(${colori[0]}, ${colori[1]}, ${colori[2]})`;
+            document.getElementById("out").style.color = newColor;
         }
     } else {
         document.getElementById("error").innerHTML = "errori";
