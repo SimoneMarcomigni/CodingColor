@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-   <meta charset="utf-8">
-   <title> Coding&Color </title>
-   <link href="style.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<div id="header">
-   <h1 id="saluto">Oggi è un bel giorno</h1>
-</div>
-<div id="title">
-</div>
-<div id="input">
-    <label for="inNumber">Inserisci un numero: </label>
-    <input id="inNumber" placeholder="inserisci numero">
-    <button type="button" id="btnumber" onclick="numeri()">Elabora</button>
-    <label for="inText">Inserisci testo: </label>
-    <input id="inText" placeholder="inserisci testo">
-    <button type="button" id="btntext" onclick="testo()">Elabora</button>
-</div>
-<div id="output">
-    <p id ="testo"></pid>
-   <p id="out">Output</p>
-   <p id="error">Errori</p>
-</div>
-<script src="script.js"></script>
-</body>
-</html>
-
+console.log("inizio esecuzione");
+let d = new Date();
+console.log(d);
+document.getElementById("saluto").innerHTML = d.getDate();
+let colori = [];
+let colori2 = new array();
+function numeri(){
+let numero = document.getElementById("inNumber").value;
+    const i = 0;
+    if(numero >= 0 && numero <= 255){
+        colori.push(numero);
+        document.getElementById("out").innerHTML = "output";
+        document.getElementById("out").innerHTML = "Hai inserito il numero: " + numero;
+        document.getElementById("out").innerHTML += "<br> I colori inseriti sono: " + colori;
+        console.log(colori);
+        document.getElementById("error").innerHTML = "errori";
+        if(colori.length == 3){
+            newColor = `rgb(${colori[0]}, ${colori[1]}, ${colori[2]})`;
+            document.getElementById("testo").style.color = newColor;
+        }
+    } else {
+        document.getElementById("error").innerHTML = "errori";
+        document.getElementById("error").innerHTML = "Il numero " + numero + " non è corretto";
+        document.getElementById("out").innerHTML = "output";
+    }
+}
+function testo(){
+    let testo = document.getElementById("inText").value
+    document.getElementById("testo").innerHTML = testo;
+}
